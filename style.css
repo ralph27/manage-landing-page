@@ -4,27 +4,49 @@
   box-sizing: border-box;
 }
 
+h1,
+p,
+a,
+h2 {
+  font-family: "de vietnam", sans-serif;
+}
+
 body {
-   background-image: url(./img/bg-tablet-pattern.svg);
-   background-repeat: no-repeat;
-   background-position-x: 900px;
-   background-position-y: -300px;
-   
+  background-image: url(./img/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position-x: 900px;
+  background-position-y: -300px;
+}
+
+p {
+  color: hsl(227, 12%, 61%);
+}
+
+h1 {
+  color: hsl(228, 39%, 23%);
+}
+
+li {
+  color: hsl(228, 39%, 23%);
+}
+
+h2 {
+  color: hsl(228, 39%, 23%);
 }
 
 .hamburger {
-   display: none;
+  display: none;
 }
+
 nav {
-  
   display: flex;
   height: 15vh;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .logo {
   flex: 0.7;
-  
+
   margin-left: 150px;
   margin-top: 50px;
   margin-right: 20px;
@@ -43,6 +65,11 @@ nav {
   font-family: "Be Vietnam", sans-serif;
   font-weight: 500;
   width: 100px;
+  cursor: pointer;
+}
+
+.nav:hover {
+  color: hsl(227, 12%, 61%);
 }
 
 .startedBtn {
@@ -59,33 +86,259 @@ nav {
 }
 
 a {
-   
   text-decoration: none;
   color: hsl(0, 0%, 98%);
   font-family: "Be Vietnam", sans-serif;
-
 }
 
- @media only screen and (max-width: 414px) {
- .navigations {
+@media only screen and (max-width: 414px) {
+  .navigations {
     display: none;
-    
- }
+  }
 
- .startedBtn {
+  .startedBtn {
     display: none;
- }
+  }
 
- .logo {
+  .logo {
     margin-left: 20px;
     margin-top: 40px;
     flex: 1;
- }
+  }
 
- .hamburger {
+  .hamburger {
     display: block;
     margin-top: 38px;
     margin-right: 20px;
- }
+  }
+}
 
+header {
+  display: flex;
+}
+
+.illustration {
+  margin-right: 180px;
+}
+
+.description {
+  flex: 1;
+  z-index: ;
+}
+
+.header-title {
+  width: 400px;
+  margin-left: 150px;
+  margin-top: 50px;
+  font-size: 3rem;
+  font-family: "de vietnam", sans-serif;
+}
+
+.header-description {
+  width: 450px;
+  margin-left: 150px;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-family: "de vietnam", sans-serif;
+}
+
+.header-button {
+  margin-left: 150px;
+}
+
+main {
+  display: flex;
+  margin-top: 40px;
+  
+}
+
+.info {
+  margin-right: 170px;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  width: 500px;
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+.main-description {
+  font-size: 1.2rem;
+  width: 380px;
+  margin-left: 150px;
+}
+
+.difference-container {
+  width: 500px;
+  margin-right: 300px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+span {
+  margin-right: 20px;
+  background: hsl(12, 88%, 59%);
+  padding: 5px 20px;
+  border-radius: 40px;
+  color: white;
+}
+
+.point-description {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  position: relative;
+  left: 90px;
+  width: 480px;
+  margin-bottom: 40px;
+}
+
+.testimonials {
+  background: ;
+  margin-top: 100px;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  column-gap: 30px;
+  margin-left: 120px;
+  margin-right: 90px;
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 100px;
+}
+
+.testimonial {
+  background: hsl(0, 0%, 98%);
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  bottom: 30px;
+}
+
+.name {
+  position: relative;
+  bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.testimony {
+  padding: 0 40px 20px 40px;
+}
+
+.note {
+  background: hsl(12, 88%, 59%);
+  display: flex;
+  margin-top: 100px;
+  background-image: url(./img/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
+  background-position-y: -100px;
+  background-position-x: 100px;;
+}
+
+
+.note-title {
+  
+  width: 400px;
+  margin: 50px 0px 50px 150px;
+  font-size: 2.2rem;
+  color: white;
+}
+
+#note-btn {
+  background: white;
+  position: absolute;
+  right: 200px;
+  margin-top: 60px;
+  margin-right: 0;
+  
+
+}
+#noteBtn {
+  color: hsl(12, 88%, 59%);
+  font-weight: 700;
+}
+
+footer {
+  background: hsl(233, 12%, 13%);
+  display: flex;
+}
+
+#footer-logo {
+  margin: 0;
+  padding-top: 40px;
+  margin-left: 120px; 
+  margin-right: 200px;
+}
+
+.social-media {
+  display: flex;
+  height: fit-content;
+  margin-left: 120px;
+  margin-top: 50px;
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+.media {
+  margin-right: 15px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 300px;
+  margin-top: 40px;
+  
+}
+
+.column-content {
+  list-style: none;
+}
+
+.information {
+  color: white;
+  margin-bottom: 20px;  
+  font-family: 'de vietnam', sans-serif;
+}
+
+.information:hover {
+  color: hsl(12, 88%, 59%);
+  cursor: pointer;
+}
+
+
+.form {
+  background: hsl(233, 12%, 13%);
+  margin-top: 60px;
+  margin-left: 180px;
+  background: 
+}
+
+input {
+  box-shadow: none;
+  width: 180px;
+  height: 35px;
+  padding: 0px 10px;
+  border-radius: 40px;
+  outline: none;
+  font-family: 'de vietnam', sans-serif;
+}
+
+::placeholder {
+  color: hsl(12, 88%, 59%);
+}
+
+label {
+  background: hsl(12, 88%, 59%);
+  padding: 5px 10px;
+  border-radius: 40px;
 }

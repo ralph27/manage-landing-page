@@ -91,10 +91,9 @@ a {
   font-family: "Be Vietnam", sans-serif;
 }
 
-
-
 header {
   display: flex;
+
 }
 
 .illustration {
@@ -103,7 +102,6 @@ header {
 
 .description {
   flex: 1;
-  z-index: ;
 }
 
 .header-title {
@@ -129,7 +127,6 @@ header {
 main {
   display: flex;
   margin-top: 40px;
-  
 }
 
 .info {
@@ -174,7 +171,6 @@ span {
 }
 
 .testimonials {
-  background: ;
   margin-top: 100px;
 }
 
@@ -221,12 +217,10 @@ span {
   background-image: url(./img/bg-simplify-section-desktop.svg);
   background-repeat: no-repeat;
   background-position-y: -100px;
-  background-position-x: 100px;;
+  background-position-x: 100px;
 }
 
-
 .note-title {
-  
   width: 400px;
   margin: 50px 0px 50px 150px;
   font-size: 2.2rem;
@@ -239,8 +233,6 @@ span {
   right: 200px;
   margin-top: 60px;
   margin-right: 0;
-  
-
 }
 #noteBtn {
   color: hsl(12, 88%, 59%);
@@ -255,7 +247,7 @@ footer {
 #footer-logo {
   margin: 0;
   padding-top: 40px;
-  margin-left: 120px; 
+  margin-left: 120px;
   margin-right: 200px;
 }
 
@@ -277,7 +269,6 @@ footer {
   grid-template-columns: auto auto;
   column-gap: 300px;
   margin-top: 40px;
-  
 }
 
 .column-content {
@@ -286,8 +277,8 @@ footer {
 
 .information {
   color: white;
-  margin-bottom: 20px;  
-  font-family: 'de vietnam', sans-serif;
+  margin-bottom: 20px;
+  font-family: "de vietnam", sans-serif;
 }
 
 .information:hover {
@@ -295,12 +286,10 @@ footer {
   cursor: pointer;
 }
 
-
 .form {
   background: hsl(233, 12%, 13%);
   margin-top: 60px;
   margin-left: 180px;
-  background: 
 }
 
 input {
@@ -310,8 +299,7 @@ input {
   padding: 5px 10px;
   border-radius: 30px;
   outline: none;
-  font-family: 'de vietnam', sans-serif;
-  outline: 
+  font-family: "de vietnam", sans-serif;
 }
 
 ::placeholder {
@@ -322,4 +310,74 @@ label {
   background: hsl(12, 88%, 59%);
   padding: 5px 10px;
   border-radius: 40px;
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    border: 1px black solid;
+  }
+  .navigations {
+    display: none;
+  }
+
+  .startedBtn {
+    display: none;
+  }
+
+  .logo {
+    margin: 40px;
+    flex: 1;
+  }
+
+  .hamburger {
+    display: block;
+    margin: 40px;
+  }
+
+  nav {
+    height: 80px;
+    margin: 0;
+  }
+
+  header {
+    height: 1000px;
+  }
+
+  .description {
+    position: relative;
+    top: 480px;
+    width: 450px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .header-title {
+    width: 380px;
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    
+  }
+
+  .header-description {
+    font-size: 1.5rem;
+    margin: 0;
+    width: 420px;
+    text-align: center;
+    margin-top: 30px;
+    
+  }
+
+  main {
+    margin-top: 200px;
+  }
+
+  .illustration {
+    transform: scale(0.7);
+    position: relative;
+    right: 520px;
+    bottom: 80px;
+  }
 }

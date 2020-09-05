@@ -91,27 +91,7 @@ a {
   font-family: "Be Vietnam", sans-serif;
 }
 
-@media only screen and (max-width: 414px) {
-  .navigations {
-    display: none;
-  }
 
-  .startedBtn {
-    display: none;
-  }
-
-  .logo {
-    margin-left: 20px;
-    margin-top: 40px;
-    flex: 1;
-  }
-
-  .hamburger {
-    display: block;
-    margin-top: 38px;
-    margin-right: 20px;
-  }
-}
 
 header {
   display: flex;
@@ -327,10 +307,11 @@ input {
   box-shadow: none;
   width: 180px;
   height: 35px;
-  padding: 0px 10px;
-  border-radius: 40px;
+  padding: 5px 10px;
+  border-radius: 30px;
   outline: none;
   font-family: 'de vietnam', sans-serif;
+  outline: 
 }
 
 ::placeholder {

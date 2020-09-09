@@ -5,17 +5,15 @@
 }
 
 h1,
-p,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
 a,
-h2 {
+p {
   font-family: "de vietnam", sans-serif;
-}
-
-body {
-  background-image: url(./img/bg-tablet-pattern.svg);
-  background-repeat: no-repeat;
-  background-position-x: 900px;
-  background-position-y: -300px;
 }
 
 p {
@@ -34,350 +32,88 @@ h2 {
   color: hsl(228, 39%, 23%);
 }
 
-.hamburger {
-  display: none;
+a {
+  text-decoration: none;
+  color: white;
+  background: hsl(12, 88%, 59%);
+  padding: 10px 30px;
+  border-radius: 30px;
 }
 
 nav {
   display: flex;
-  height: 15vh;
-  margin-bottom: 70px;
-}
-
-.logo {
-  flex: 0.7;
-
-  margin-left: 150px;
-  margin-top: 50px;
-  margin-right: 20px;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
 }
 
 .navigations {
-  flex: 2;
   display: flex;
-  list-style: none;
-  margin-top: 45px;
+  width: 40%;
+  justify-content: space-around;
+  list-style-type: none;
 }
 
-.navigations li {
-  margin-right: 30px;
-  font-size: 1rem;
-  font-family: "Be Vietnam", sans-serif;
-  font-weight: 500;
-  width: 100px;
-  cursor: pointer;
+.burger {
+  display: none;
 }
 
-.nav:hover {
-  color: hsl(227, 12%, 61%);
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
 }
 
-.startedBtn {
-  margin-top: 35px;
-  margin-right: 200px;
-  text-decoration: none;
-  width: 150px;
-  background: hsl(12, 88%, 59%);
-  font-size: 1rem;
-  height: 45px;
-  border-radius: 40px;
-  padding-top: 9px;
-  padding-left: 30px;
+.image {
+  max-width: 100%;
+  height: auto;
 }
 
-a {
-  text-decoration: none;
-  color: hsl(0, 0%, 98%);
-  font-family: "Be Vietnam", sans-serif;
-}
-
-header {
-  display: flex;
-
-}
-
-.illustration {
-  margin-right: 180px;
-}
-
-.description {
-  flex: 1;
-}
-
-.header-title {
-  width: 400px;
-  margin-left: 150px;
-  margin-top: 50px;
-  font-size: 3rem;
-  font-family: "de vietnam", sans-serif;
-}
-
-.header-description {
-  width: 450px;
-  margin-left: 150px;
-  margin-top: 20px;
-  font-size: 1.3rem;
-  font-family: "de vietnam", sans-serif;
-}
-
-.header-button {
-  margin-left: 150px;
-}
-
-main {
-  display: flex;
-  margin-top: 40px;
-}
-
-.info {
-  margin-right: 170px;
-}
-
-.main-title {
-  font-size: 2.5rem;
-  width: 500px;
-  margin-left: 150px;
-  margin-bottom: 20px;
-}
-
-.main-description {
-  font-size: 1.2rem;
-  width: 380px;
-  margin-left: 150px;
-}
-
-.difference-container {
-  width: 500px;
-  margin-right: 300px;
-  display: grid;
-  grid-template-rows: auto auto auto;
-}
-
-span {
-  margin-right: 20px;
-  background: hsl(12, 88%, 59%);
-  padding: 5px 20px;
-  border-radius: 40px;
-  color: white;
-}
-
-.point-description {
-  font-size: 1.2rem;
-  margin-top: 20px;
-  position: relative;
-  left: 90px;
-  width: 480px;
-  margin-bottom: 40px;
-}
-
-.testimonials {
-  margin-top: 100px;
-}
-
-.testimonial-container {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  column-gap: 30px;
-  margin-left: 120px;
-  margin-right: 90px;
-}
-
-.testimonial-title {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 100px;
-}
-
-.testimonial {
-  background: hsl(0, 0%, 98%);
-  text-align: center;
-}
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  position: relative;
-  bottom: 30px;
-}
-
-.name {
-  position: relative;
-  bottom: 20px;
-  font-size: 1.5rem;
-}
-
-.testimony {
-  padding: 0 40px 20px 40px;
-}
-
-.note {
-  background: hsl(12, 88%, 59%);
-  display: flex;
-  margin-top: 100px;
-  background-image: url(./img/bg-simplify-section-desktop.svg);
-  background-repeat: no-repeat;
-  background-position-y: -100px;
-  background-position-x: 100px;
-}
-
-.note-title {
-  width: 400px;
-  margin: 50px 0px 50px 150px;
-  font-size: 2.2rem;
-  color: white;
-}
-
-#note-btn {
-  background: white;
-  position: absolute;
-  right: 200px;
-  margin-top: 60px;
-  margin-right: 0;
-}
-#noteBtn {
-  color: hsl(12, 88%, 59%);
-  font-weight: 700;
-}
-
-footer {
-  background: hsl(233, 12%, 13%);
-  display: flex;
-}
-
-#footer-logo {
-  margin: 0;
-  padding-top: 40px;
-  margin-left: 120px;
-  margin-right: 200px;
-}
-
-.social-media {
-  display: flex;
-  height: fit-content;
-  margin-left: 120px;
-  margin-top: 50px;
-  list-style: none;
-  padding-bottom: 30px;
-}
-
-.media {
-  margin-right: 15px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 300px;
-  margin-top: 40px;
-}
-
-.column-content {
-  list-style: none;
-}
-
-.information {
-  color: white;
-  margin-bottom: 20px;
-  font-family: "de vietnam", sans-serif;
-}
-
-.information:hover {
-  color: hsl(12, 88%, 59%);
-  cursor: pointer;
-}
-
-.form {
-  background: hsl(233, 12%, 13%);
-  margin-top: 60px;
-  margin-left: 180px;
-}
-
-input {
-  box-shadow: none;
-  width: 180px;
-  height: 35px;
-  padding: 5px 10px;
-  border-radius: 30px;
-  outline: none;
-  font-family: "de vietnam", sans-serif;
-}
-
-::placeholder {
-  color: hsl(12, 88%, 59%);
-}
-
-label {
-  background: hsl(12, 88%, 59%);
-  padding: 5px 10px;
-  border-radius: 40px;
-}
-
-@media only screen and (max-width: 450px) {
-  html {
-    border: 1px black solid;
-  }
+@media screen and (max-width: 1024px) {
   .navigations {
-    display: none;
+    width: 50%;
+  }
+
+  .logo {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .burger {
+    display: block;
   }
 
   .startedBtn {
     display: none;
   }
 
-  .logo {
-    margin: 40px;
-    flex: 1;
-  }
-
-  .hamburger {
-    display: block;
-    margin: 40px;
-  }
-
-  nav {
-    height: 80px;
-    margin: 0;
-  }
-
-  header {
-    height: 1000px;
-  }
-
-  .description {
-    position: relative;
-    top: 480px;
-    width: 450px;
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
+  .navigations {
+    display: none;
+    position: absolute;
+    top: 50px;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40vh;
+    background: white;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    margin-top: 20px;
   }
 
-  .header-title {
-    width: 380px;
-    font-size: 3rem;
-    margin: 0;
-    text-align: center;
-    
+  .nav {
+    color: black;
+    font-weight: 700;
   }
 
-  .header-description {
-    font-size: 1.5rem;
-    margin: 0;
-    width: 420px;
-    text-align: center;
+  .image {
     margin-top: 30px;
-    
   }
 
-  main {
-    margin-top: 200px;
-  }
-
-  .illustration {
-    transform: scale(0.7);
-    position: relative;
-    right: 520px;
-    bottom: 80px;
+  .active {
+    display: flex;
   }
 }

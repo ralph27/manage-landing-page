@@ -1,9 +1,9 @@
-let media = document.querySelector(".media");
+let navigations = document.querySelector(".navigations");
+let burger = document.querySelector(".burger");
+
+function toggleNav() {
+  navigations.classList.toggle('active');
+}
 
 
-
-
-
-media.addEventListener("mouseenter", function handle() {
-   media.style.img
-});
+ burger.addEventListener("click", toggleNav);

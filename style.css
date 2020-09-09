@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 h1,
 h2,
 h3,
@@ -68,7 +69,53 @@ nav {
 .image {
   max-width: 100%;
   height: auto;
+  
 }
+
+.nav {
+  color:  hsl(227, 12%, 61%);
+  cursor: pointer;
+}
+
+.nav:hover {
+  color: hsl(228, 39%, 23%);
+}
+
+header {
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  margin-top: 50px;
+  
+}
+
+.description {
+  margin-left: 10%;
+}
+
+.header-title {
+  width: 90%;
+  font-size: 4vw;
+
+}
+
+.header-description {
+  width: 70%;
+  font-size: 1.5vw;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1024px) {
   .navigations {
@@ -111,9 +158,50 @@ nav {
 
   .image {
     margin-top: 30px;
+    order: 1;
   }
+
+.description {
+  order: 2;
+}
 
   .active {
     display: flex;
+  }
+
+  .background {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+ 
+
+  .description {
+    text-align: center;
+   
+    margin: 0 auto;
+  }
+
+  .header-title {
+    font-size: 2.3rem;
+    width: 100%;
+  }
+
+  .header-description {
+    font-size: 1.2rem;
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
   }
 }

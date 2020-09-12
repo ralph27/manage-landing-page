@@ -72,7 +72,6 @@ nav {
 .image {
   max-width: 100%;
   height: auto;
-  
 }
 
 .nav {
@@ -111,14 +110,22 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 0.8fr ));
-  margin-top: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  margin-top: 70px;
+
+  column-gap: 20px;
+
+  padding: 0 1%;
 }
 
 .info {
   margin-left: 10%;
 }
 
+.point {
+  margin-bottom: 30px;
+}
 .main-title {
   font-size: 2.5rem;
   width: 95%;
@@ -126,8 +133,8 @@ main {
 
 .main-description {
   font-size: 1.5rem;
-  width: 85%;
   margin-top: 20px;
+  
 }
 
 .difference-container {
@@ -138,8 +145,9 @@ main {
 }
 
 .point-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .point-number {
@@ -148,13 +156,55 @@ main {
   background: hsl(12, 88%, 59%);
   border-radius: 30px;
   padding: 5px 20px;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .point-description {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   width: 80%;
   margin-left: 100px;
+}
+
+.testimonials {
+  margin-top: 150px;
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 20px;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  margin-top: 70px;
+  row-gap: 80px;
+  column-gap: 20px;
+  text-align: center;
+  padding: 0 1%;
+}
+
+.testimonial {
+  background: hsla(227, 12%, 61%, 0.3);
+}
+
+.avatar {
+  width: 20%;
+  transform: translateY(-50%);
+}
+
+.name {
+  position: relative;
+  bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.testimony {
+  font-size: 1.2rem;
+  width: 95%;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1084px) {
@@ -175,25 +225,22 @@ main {
 
   .point-title {
     font-size: 1.4rem;
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
   }
 
-  .point-description{
+  .point-description {
     font-size: 1rem;
     margin-left: 87px;
   }
-
 
   .difference-container {
     margin-right: 5%;
   }
 
-  .main-description {
-    width: 95%;
-  }
+ 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .burger {
     display: block;
   }
@@ -274,19 +321,14 @@ main {
     margin-top: 40px;
   }
 
-  main {
-   justify-content: center;
-  }
-
   .info {
-    margin: 0 auto;
+    margin: 20px auto;
     margin-bottom: 50px;
   }
 
   .main-description {
-    font-size: 1.1rem;
-   text-align: center;
-    width: 100%;
+      text-align: center;
+      
   }
 
   .main-title {
@@ -297,30 +339,34 @@ main {
   .difference-container {
     margin: 0 auto;
     width: 100%;
-
   }
 
   .point-title {
+    display: flex;
     background: hsla(12, 88%, 59%, 0.2);
-    font-size: 1rem;
-    padding: 5px 0px;
+    font-size: 5vw;
+    padding: 0px 0px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     margin-bottom: 10px;
-    margin-left: 5%;
-
-   
+    margin-left: 3%;
+    width: 92%;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .point-number {
-    font-size: .9rem;
-    margin-right: 5px;;
+    font-size: 0.9rem;
+    margin-right: 5px;
   }
 
   .point-description {
     margin-left: 5%;
-    font-size: 1rem;
-    width: 95%;
-    
+    font-size: 4.3vw;
+    width: 90%;
+  }
+
+  .testimonial {
+    width: 97%;
   }
 }

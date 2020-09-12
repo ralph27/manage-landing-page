@@ -23,6 +23,7 @@ p {
 
 p {
   color: hsl(227, 12%, 61%);
+  line-height: 32px;
 }
 
 h1 {
